@@ -51,3 +51,17 @@ delete from orders where order_id=orderid;
 end //
 
 call deleteorderbyId(105);
+
+
+
+-- 5. BONUS High value orders(get orders above certain amount)
+
+delimiter //
+
+create procedure getHighValueOrders(in minAmount decimal(10,2))
+begin
+select * from orders where total_amount>minAmount;
+end //
+delimiter //
+
+call getHighValueOrders(2000);
