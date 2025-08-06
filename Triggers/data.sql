@@ -12,7 +12,7 @@ END //
 DELIMITER ;
 
 
--- Check Product Stock Before Order
+-- Check Product Stock Before order
 
 SELECT * FROM Products WHERE product_id = 1;
 -- Example Output: stock_quantity = 50;
