@@ -54,7 +54,7 @@ call deleteorderbyId(105);
 
 
 
--- 5. BONUS High value orders(get orders above certain amount)
+-- 5.  High value orders(get orders above certain amount)
 
 delimiter //
 
@@ -65,3 +65,4 @@ end //
 delimiter //
 
 call getHighValueOrders(2000);
+
